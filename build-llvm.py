@@ -384,8 +384,8 @@ def versioned_binaries(binary_name):
     :return: List of versioned binaries
     """
 
-    # There might be clang-7 to clang-16
-    tot_llvm_ver = 16
+    # There might be clang-7 to clang-22
+    tot_llvm_ver = 22
     try:
         cmakelists_url = 'https://raw.githubusercontent.com/llvm/llvm-project/main/llvm/CMakeLists.txt'
         with request.urlopen(cmakelists_url) as response:
