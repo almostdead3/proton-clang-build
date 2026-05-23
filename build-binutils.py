@@ -166,7 +166,7 @@ def invoke_configure(build_folder, install_folder, root_folder, target,
     configure_arch_flags = {
         "arm-linux-gnueabi": [
             '--disable-multilib', '--disable-nls', '--with-gnu-as',
-            '--with-gnu-ld'
+            '--with-gnu-ld', '--enable-gold'
         ],
         "powerpc-linux-gnu":
         ['--disable-sim', '--enable-lto', '--enable-relro', '--with-pic'],
