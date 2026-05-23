@@ -9,10 +9,10 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-    - uses: actions/checkout@v4
-    - name: Install dependencies
-      run: bash ci.sh deps
-    - name: Build LLVM
-      run: bash build-toolchain.sh
-    - name: GitHub release
-      run: bash ci.sh release
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: bash ci.sh deps
+      - name: Build LLVM
+        run: bash build-toolchain.sh
+      - name: GitHub release
+        run: bash ci.sh release
