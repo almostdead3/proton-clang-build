@@ -22,7 +22,7 @@ def current_binutils():
     Simple getter for current stable binutils release
     :return: The current stable release of binutils
     """
-    return "binutils-2.43.1"
+    return "binutils-2.46.0"
 
 
 def download_binutils(folder):
@@ -68,7 +68,7 @@ def verify_binutils_checksum(file):
             if not data:
                 break
             file_hash.update(data)
-    good_hash = "20977ad17729141a2c26d358628f44a0944b84dcfefdec2ba029c2d02f40dfc41cc91c0631044560d2bd6f9a51e1f15846b4b311befbe14f1239f14ff7d57824"
+    good_hash = "32f880bb4f69351f4ae54a5d00359625c6c49d8e76624fb5cffdf174c79c8d3212f66225b81c12933c6ed59604ab652560773dd92fab384b930c97a9d4e1fdf2"
     if file_hash.hexdigest() != good_hash:
         raise RuntimeError(
             "binutils: SHA512 checksum does not match known good one!")
