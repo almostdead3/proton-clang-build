@@ -1,9 +1,8 @@
 name: Build test
+
 on:
-  push:
-    branches:
-      - test1
   workflow_dispatch:
+
 jobs:
   build-test:
     runs-on: ubuntu-latest
