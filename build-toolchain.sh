@@ -13,7 +13,7 @@ function msg() {
 # Build LLVM
 msg "Building LLVM..."
 ./build-llvm.py \
-	--branch "release/20.x" \
+	--branch "release/19.x" \
 	--clang-vendor "LLVM" \
 	--targets "ARM;AArch64;X86" \
 	"$repo_flag"
